@@ -1,122 +1,133 @@
-# Stellar Notes DApp
+# Stellar Crowdfunding DApp
 
-**Stellar Notes DApp** - Blockchain-Based Decentralized Note-Taking System
+**Stellar Crowdfunding DApp** - Blockchain-Based Decentralized Fundraising Platform
 
 ## Project Description
 
-Stellar Notes DApp is a decentralized smart contract solution built on the Stellar blockchain using Soroban SDK. It provides a secure, immutable platform for managing personal notes directly on the blockchain. The contract ensures that your data is stored transparently and is only manageable through predefined smart contract functions, eliminating reliance on centralized database providers.
+Stellar Crowdfunding DApp is a decentralized fundraising platform built on the Stellar blockchain using the Soroban Smart Contract SDK. It enables individuals and organizations to create transparent and trustless crowdfunding campaigns without relying on centralized intermediaries.
 
-The system allows users to create, view, and delete notes, leveraging the efficiency and security of the Stellar network. Each note is uniquely identified and stored within the contract's instance storage, ensuring data persistence and reliability.
+The platform allows users to create campaigns, contribute funds, and track campaign progress directly on-chain. All transactions and campaign data are stored immutably on the blockchain, ensuring transparency, security, and accountability.
+
+Each campaign contains essential information such as title, description, funding goal, deadline, and creator address.
+
+---
 
 ## Project Vision
 
-Our vision is to revolutionize personal productivity in the digital age by:
+Our vision is to transform the way people raise and contribute funds by:
 
-- **Decentralizing Data**: Moving note-taking from centralized servers to a global, distributed blockchain
-- **Ensuring Ownership**: Empowering users to have complete control and ownership over their digital thoughts and information
-- **Guaranteeing Immutability**: Providing a permanent, tamper-proof record of notes that cannot be altered or deleted by third parties
-- **Enhancing Privacy**: Leveraging blockchain security to protect personal information from unauthorized access
-- **Building Trustless Systems**: Creating a platform where data integrity is guaranteed by code, not by company promises
+- **Eliminating Intermediaries**: Removing centralized platforms and enabling direct peer-to-peer funding  
+- **Ensuring Transparency**: Making all transactions publicly verifiable on the blockchain  
+- **Empowering Creators**: Giving full control of fundraising campaigns to their creators  
+- **Building Trustless Systems**: Ensuring funds are managed by smart contracts, not organizations  
+- **Promoting Global Access**: Allowing anyone with a wallet to participate without restrictions  
 
-We envision a future where digital information is truly personal and sovereign, empowering individuals with complete autonomy over their digital assets.
+---
 
 ## Key Features
 
-### 1. **Simple Note Creation**
+### 1. Campaign Creation
 
-- Create notes with just one function call
-- Specify title and content for each note
-- Automated ID generation for unique identification
-- Persistent storage on the Stellar blockchain
+- Create crowdfunding campaigns via smart contract  
+- Define title, description, funding goal, and deadline  
+- Automatic campaign ID generation  
+- Persistent on-chain storage  
 
-### 2. **Efficient Data Retrieval**
+### 2. Fund Contribution
 
-- Fetch all stored notes in a single call
-- Structured data representation for easy frontend integration
-- Quick access to your entire note collection
-- Real-time synchronization with the blockchain state
+- Users can contribute directly to campaigns  
+- Secure and transparent transactions  
+- Real-time campaign balance updates  
+- No intermediaries or hidden fees  
 
-### 3. **Secure Deletion**
+### 3. Campaign Retrieval
 
-- Remove specific notes using their unique IDs
-- Permanent removal from the contract storage
-- Clean and efficient storage management
-- Immediate update of the note list after deletion
+- Fetch all campaigns in a single call  
+- Structured data for frontend integration  
+- View campaign details and progress  
+- Real-time synchronization with blockchain  
 
-### 4. **Transparency and Security**
+### 4. Transparency and Security
 
-- View all note activities on the blockchain
-- Blockchain-based verification of all storage actions
-- Immutable records of note creation and deletion
-- Protected against unauthorized modifications
+- Publicly verifiable transactions  
+- Immutable campaign records  
+- Protection against data manipulation  
+- Smart contract-based fund management  
 
-### 5. **Stellar Network Integration**
+### 5. Stellar Network Integration
 
-- Leverages the high speed and low cost of Stellar
-- Built using the modern Soroban Smart Contract SDK
-- Scalable architecture for growing note collections
-- Interoperable with other Stellar-based services
+- Fast and low-cost transactions  
+- Built using Soroban Smart Contracts  
+- Scalable architecture  
+- Compatible with Stellar wallets  
+
+---
 
 ## Contract Details
 
-Contract Address: CAWLJENIINEZJFQFC5VCB6VNRVJGSXO2L7DORGXLDNVBKT26RRHTUQFJ
-  ![alt text](smartcontract.png)
+Contract Address: CCVJA5V54BOXSSRP74NOLEH7NOH3LDDYMBRTZWHJ3L7SERLH6VPSZ6WA  
+
+![alt text](smartcontract.png)
+
+---
 
 ## Frontend Preview
 
 ![alt text](frontend.png)
 
+---
+
 ## Future Scope
 
 ### Short-Term Enhancements
 
-1. **Note Encryption**: Support for end-to-end encryption of note content for enhanced privacy
-2. **Category Management**: Add tags and categories to organize notes efficiently
-3. **Rich Text Support**: Extend support beyond plain text to include Markdown and formatted content
-4. **Search Functionality**: Implement advanced search filters for large note collections
+1. Campaign editing before deadline  
+2. Contribution history tracking  
+3. Campaign progress indicators  
+4. Deadline validation  
 
 ### Medium-Term Development
 
-5. **Collaborative Notes**: Implement multi-signature requirements for shared or collaborative note-taking
-   - Shared access for multiple addresses
-   - Permission-based editing and viewing
-   - Version history tracking
-6. **Notification System**: Off-chain bridge to alert users of new updates or shared notes
-7. **Asset Attachment**: Capability to attach digital assets or tokens to specific notes
-8. **Inter-Contract Integration**: Allow other smart contracts to interact with and store data in the notes contract
+5. Refund mechanism for failed campaigns  
+6. Multi-currency support  
+7. Campaign categorization  
+8. Notification system  
 
 ### Long-Term Vision
 
-9. **Cross-Chain Synchronization**: Extend note storage to multiple blockchain networks
-10. **Decentralized UI Hosting**: Host the frontend on IPFS or similar decentralized platforms
-11. **AI-Powered Summarization**: Optional integration with AI to help users summarize their notes
-12. **Privacy Layers**: Implement zero-knowledge proofs for completely private note content
-13. **DAO Governance**: Community-driven protocol improvements and feature prioritization
-14. **Identity Management**: Integration with decentralized identity (DID) systems for user management
+9. DAO-based crowdfunding  
+10. Cross-chain integration  
+11. Decentralized storage (IPFS)  
+12. Reputation system  
+13. AI-based campaign insights  
+14. Decentralized identity (DID) integration  
 
 ### Enterprise Features
 
-15. **Corporate Documentation**: Adapt the system for secure corporate record-keeping
-16. **Immutable Logging**: Create time-locked logs for audit purposes
-17. **Automated Reporting**: Automatic note triggers for periodic reporting
-18. **Multi-Language Support**: Expand accessibility with internationalization
+15. Corporate fundraising solutions  
+16. Audit and compliance tracking  
+17. Automated fund distribution  
+18. Multi-language support  
 
 ---
 
 ## Technical Requirements
 
-- Soroban SDK
-- Rust programming language
-- Stellar blockchain network
-
-## Getting Started
-
-Deploy the smart contract to Stellar's Soroban network and interact with it using the three main functions:
-
-- `create_note()` - Create a new note with a title and content
-- `get_notes()` - Retrieve all stored notes from the contract
-- `delete_note()` - Remove a specific note by its ID
+- Soroban SDK  
+- Rust programming language  
+- Stellar blockchain network  
+- Freighter wallet  
 
 ---
 
-**Stellar Notes DApp** - Securing Your Thoughts on the Blockchain
+## Getting Started
+
+Deploy the smart contract to Stellar Soroban Testnet and interact using the following functions:
+
+- `create_campaign()` - Create a new campaign  
+- `get_campaigns()` - Retrieve all campaigns  
+- `contribute()` - Contribute to a campaign  
+
+---
+
+**Stellar Crowdfunding DApp** - Decentralizing Fundraising on the Blockchain
