@@ -17,8 +17,8 @@ import {
   signTransaction,
 } from "@stellar/freighter-api";
 
-const RPC_URL = import.meta.env.VITE_RPC_URL || "https://soroban-testnet.stellar.org";
-const NETWORK = Networks.TESTNET;
+const RPC_URL = import.meta.env.VITE_RPC_URL || "https://mainnet.sorobanrpc.com";
+const NETWORK = Networks.PUBLIC;
 const server = new rpc.Server(RPC_URL);
 
 export function useContract() {
@@ -191,7 +191,7 @@ export function useContract() {
       const preparedTx = rpc.assembleTransaction(tx, simResult).build();
 
       const signResult = await signTransaction(preparedTx.toXDR(), {
-        network: "TESTNET",
+        network: "PUBLIC",
         networkPassphrase: NETWORK,
       });
       if (signResult.error) throw new Error(signResult.error);
