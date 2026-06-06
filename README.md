@@ -65,7 +65,7 @@ Our vision is to transform the way people raise and contribute funds by:
 
 ## Contract Details
 
-Contract Address: CCVJA5V54BOXSSRP74NOLEH7NOH3LDDYMBRTZWHJ3L7SERLH6VPSZ6WA  
+Contract Address: CAJ2CATNWG2UROYSSWJIV457RIDCF57CCHCIPPK2PV277F32T4JVHXJI  
 
 ![alt text](smartcontract.png)
 
